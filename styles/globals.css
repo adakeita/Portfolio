@@ -1,0 +1,47 @@
+:root {
+    --darkborder: #0d1321;
+    --light-bgr: #ffeddf;
+    --theme-green: #c5d86d;
+    --brown: #86615c;
+    --turquoise: #afe0ce;
+    --transition: all 0.4s ease-in-out;
+    --full-size: 100%;
+}
+
+* {
+    text-decoration: none;
+    list-style-type: none;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background: #efebe8;
+    font-family: "Syne", sans-serif;
+    margin: 0;
+}
+
+body a {
+    text-transform: uppercase;
+    color: #0d1321;
+}
+
+.content-container {
+    margin: 30px auto;
+    padding: 0;
+}
+
+.test {
+    object-fit: cover;
+    z-index: -1;
+    font-size: 2rem;
+    position: absolute;
+    color: #6e5f5f21;
+}
