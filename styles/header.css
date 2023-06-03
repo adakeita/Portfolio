@@ -4,30 +4,9 @@ header {
     margin: 0 auto;
     border-bottom: 1px solid var(--darkborder);
     width: var(--full-size);
-    transition: var(--transition);
 }
 
-nav a {
-    color: white;
-    display: block;
-    height: 100%;
-    padding: 0.4em 0em;
-    transition: all 0.3s ease-in-out;
-}
-
-.closed {
-    max-height: 0;
-    overflow: hidden;
-    transition: var(--transition);
-}
-
-.open {
-    max-height: 500px;
-    transition: var(--transition);
-}
-
-.header-content,
-.logo-burger-row {
+.header-content {
     height: var(--full-size);
     width: var(--full-size);
     display: flex;
@@ -35,12 +14,12 @@ nav a {
 }
 
 .logo-burger-row {
+    height: var(--full-size);
     width: 95%;
     display: flex;
     margin: 1em auto;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
 }
 
 .row-section {
@@ -54,8 +33,7 @@ nav a {
 }
 
 .logo,
-.menu-icon,
-.menu-icon-wrapper {
+.menu-icon {
     width: var(--full-size);
     height: var(--full-size);
     object-fit: contain;
@@ -63,12 +41,26 @@ nav a {
 
 .menu-icon-wrapper {
     width: 40px;
+    height: var(--full-size);
     background: none;
     border: none;
 }
 
 .menu-icon-wrapper:hover {
-cursor: pointer;
+    cursor: pointer;
+}
+
+.nav-wrapper {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out 0.4s;
+}
+
+.open {
+    opacity: 1;
+    max-height: 500px;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 
 .navlist {
@@ -76,18 +68,33 @@ cursor: pointer;
     flex-direction: column;
     align-items: flex-start;
     padding: 0em 2em;
-    margin-top: 0;
 }
 
 .nav-item {
     width: var(--full-size);
+}
+
+nav a {
+    color: white;
+    display: block;
+    height: 100%;
+    padding: 0.4em 0em;
+}
+
+.nav-item a {
     transition: all 0.3s ease-in-out;
 }
 
 .nav-item a:hover {
     background-color: rgba(255, 255, 255, 0.178);
-    transition: all 0.3s ease-in-out;
+    text-indent: 1em;
+    transition: text-indent 0.3s ease-in-out;
 }
+
+.nav-item a.active {
+    text-decoration: underline;
+}
+
 
 
 
