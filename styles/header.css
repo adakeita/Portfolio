@@ -1,5 +1,5 @@
 header {
-    background: rgb(104 109 177);
+    background: #703678;
     padding: 0;
     margin: 0 auto;
     border-bottom: 1px solid var(--darkborder);
@@ -54,12 +54,12 @@ header {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out 0.4s;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 
 .open {
     opacity: 1;
-    max-height: 500px;
+    max-height: 155px;
     transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 
@@ -83,6 +83,7 @@ nav a {
 
 .nav-item a {
     transition: all 0.3s ease-in-out;
+    text-indent: 2em;
 }
 
 .nav-item a:hover {
@@ -93,10 +94,8 @@ nav a {
 
 .nav-item a.active {
     text-decoration: underline;
+    text-indent: 1em;
 }
-
-
-
 
 /*.navigation {
     width: 80%;

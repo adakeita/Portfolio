@@ -11,8 +11,9 @@
 * {
     text-decoration: none;
     list-style-type: none;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    box-sizing: border-box;
 }
 
 *::-webkit-scrollbar {
@@ -22,8 +23,6 @@
 body {
     height: 100vh;
     overflow-x: hidden;
-    box-sizing: border-box;
-    background: #efebe8;
     font-family: "Syne", sans-serif;
     margin: 0;
 }
@@ -34,8 +33,17 @@ body a {
 }
 
 .content-container {
-    margin: 30px auto;
+    background: url("../images/bgr.png");
+    background-size: contain;
+    background-repeat: repeat;
+    margin: 0;
     padding: 0;
+    min-height: 80vh;
+    overflow: hidden;
+}
+
+h1, h2 {
+    font-family: inter;
 }
 
 .test {
