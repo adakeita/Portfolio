@@ -29,7 +29,6 @@ body {
     height: 100vh;
     overflow-x: hidden;
     margin: 0;
-    overflow-x: hidden;
     background: var(--dark-bg);
     color: white;
     font-family: "Courier", monospace;

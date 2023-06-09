@@ -101,6 +101,13 @@ INDEX
     overflow: hidden;
 }
 
+.featured-class-row a {
+    display: contents;
+    text-transform: none;
+    color: unset;
+    font-weight: normal;
+}
+
 .feature p {
     font-weight: bold;
 }
