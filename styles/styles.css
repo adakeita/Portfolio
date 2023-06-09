@@ -324,19 +324,31 @@ Projects
 
 .project-noroff:hover {
     box-shadow: 3px 8px 10px rgb(0 0 0 / 50%);
-    transform: scale(1.05);
+    transform: rotate(2deg);
 }
 
 .project-description-noroff {
     font-size: 1em;
-    margin: 0.5em 0;
+    margin: 1.5em 0;
+    text-align: center;
+}
+
+.project-stack {
+    text-align: center;
 }
 
 .project-screenshot-noroff {
     width: 100%;
     height: auto;
     margin: 0.5em 0;
+    border: 1px solid;
 }
+
+.project-screenshot-noroff:hover {
+    filter: grayscale(12);
+    cursor: pointer;
+}
+
 
 .logo-wrapper-noroff {
     text-align: center;
@@ -348,16 +360,36 @@ Projects
     max-width: 80%;
 }
 
+.github-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    width: 100%;
+    border: 2px solid white;
+}
+
+.github-link-icon {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.github- {
+    width: 100%;
+}
+
 .project-link-noroff {
     display: block;
-    color: #337ab7;
+    font-weight: bold;
+    color: white;
     text-decoration: none;
     margin: 0.5em auto;
     text-align: center;
+    padding: 5px 0px;
+    transition: all 0.3s ease-in-out;
 }
 
 .project-link-noroff:hover {
-    text-decoration: underline;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 775px) {
@@ -379,4 +411,3 @@ Projects
         width: calc(33% - 2em);
     }
 }
-
