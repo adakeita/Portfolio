@@ -319,6 +319,11 @@ Projects
 }
 
 .museum-noroff {
+    background-image: url("../icons/museum-bgr.png");
+    background-size: cover;
+}
+
+.museum-noroff {
     color: black;
 }
 
@@ -389,6 +394,54 @@ Projects
 .project-link-noroff:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
+}
+
+.personal-project-row {
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.project-personal {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.musicapp {
+    background-color: #ca4f98;
+}
+
+.keitaweather {
+    background-color: #61a6c5;
+}
+
+.keitaweather-logo {
+    border: 2px solid;
+}
+
+.personal-logo-wrapper {
+    text-align: center;
+    margin: 0.5em auto;
+    width: 130px;
+}
+
+.logo-personal {
+    width: 100%;
+}
+
+.project-screenshot-personal {
+    width: 100%;
+    height: auto;
+    margin: 0.5em 0;
+    border: 1px solid;
 }
 
 @media (max-width: 775px) {
