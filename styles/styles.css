@@ -289,7 +289,7 @@ INDEX
 Projects
 */
 
-.noroff-project {
+.project-noroff {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -298,7 +298,7 @@ Projects
     margin: 1em;
     padding: 1em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
 }
 
 .noroff-project-row {
@@ -307,42 +307,48 @@ Projects
     justify-content: space-evenly;
 }
 
-.squareeyes {
+.squareeyes-noroff {
     background-color: black;
     color: white;
 }
 
-.noroff-project:hover {
+.soilmates-noroff {
+    background-image: url("../icons/sbgr.png");
+    background-size: cover;
+    color: black;
+}
+
+.museum-noroff {
+    color: black;
+}
+
+.project-noroff:hover {
     box-shadow: 3px 8px 10px rgb(0 0 0 / 50%);
+    transform: scale(1.05);
 }
 
-.project-title {
-    font-size: 1.2em;
-    margin: 0.5em 0;
-}
-
-.project-description {
+.project-description-noroff {
     font-size: 1em;
     margin: 0.5em 0;
 }
 
-.project-screenshot {
+.project-screenshot-noroff {
     width: 100%;
     height: auto;
     margin: 0.5em 0;
 }
 
-.noroff-project-logo-wrapper {
+.logo-wrapper-noroff {
     text-align: center;
     margin: 0.5em auto;
     width: 130px;
 }
 
-.featured-logo {
+.logo-noroff {
     max-width: 80%;
 }
 
-.project-link {
+.project-link-noroff {
     display: block;
     color: #337ab7;
     text-decoration: none;
@@ -350,7 +356,7 @@ Projects
     text-align: center;
 }
 
-.project-link:hover {
+.project-link-noroff:hover {
     text-decoration: underline;
 }
 
@@ -363,13 +369,14 @@ Projects
 }
 
 @media (min-width: 600px) {
-    .noroff-project {
+    .project-noroff {
         width: calc(50% - 2em);
     }
 }
 
 @media (min-width: 900px) {
-    .noroff-project {
+    .project-noroff {
         width: calc(33% - 2em);
     }
 }
+
