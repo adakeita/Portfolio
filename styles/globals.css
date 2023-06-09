@@ -1,7 +1,12 @@
 :root {
     --darkborder: #0d1321;
-    --light-bgr: #ffeddf;
+    --dark-bg: #0d1321;
+    --light-bgr: #f6f6f6;
+    --accent-color: #c5d86d;
+    --secondary-color: #86615c;
+    --tertiary-color: #afe0ce;
     --theme-green: #c5d86d;
+    --yellowish: #ee892d;
     --brown: #86615c;
     --turquoise: #afe0ce;
     --transition: all 0.4s ease-in-out;
@@ -23,17 +28,21 @@
 body {
     height: 100vh;
     overflow-x: hidden;
-    font-family: "Syne", sans-serif;
     margin: 0;
+    overflow-x: hidden;
+    background: var(--dark-bg);
+    color: white;
+    font-family: "Courier", monospace;
 }
 
 body a {
     text-transform: uppercase;
-    color: #0d1321;
+    color: white;
 }
 
 .content-container {
-    background-color: #ddddddc9;
+    background-color: var(--dark-bg);
+    color: var(--light-bgr);
     margin: 0;
     padding: 0;
     min-height: 80vh;
@@ -45,12 +54,5 @@ h2,
 h3,
 h4 {
     font-family: inter;
-}
-
-.test {
-    object-fit: cover;
-    z-index: -1;
-    font-size: 2rem;
-    position: absolute;
-    color: #6e5f5f21;
+    color: var(--light-bgr);
 }
