@@ -345,10 +345,9 @@ Projects
 }
 
 .project-screenshot-noroff:hover {
-    filter: grayscale(12);
+    filter: blur(1px);
     cursor: pointer;
 }
-
 
 .logo-wrapper-noroff {
     text-align: center;
