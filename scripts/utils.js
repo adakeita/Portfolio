@@ -25,3 +25,18 @@ export const handleMenu = () => {
         }
     });
 };
+
+
+export function createModal() {
+	const modal = document.createElement("div");
+	modal.classList.add("modal", "hidden");
+
+	const modalImage = document.createElement("img");
+	modalImage.setAttribute("id", "modal-image");
+	modalImage.setAttribute("alt", "Blog post image enlarged");
+
+	modal.appendChild(modalImage);
+	document.body.appendChild(modal);
+
+	return modal;
+}

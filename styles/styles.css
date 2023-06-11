@@ -28,6 +28,7 @@ INDEX
 
 .hero-image {
     width: 100%;
+    vertical-align: bottom;
 }
 
 .about-me,
@@ -57,6 +58,7 @@ INDEX
 
 .skill p {
     font-size: 20px;
+    font-family: "Courier", monospace;
 }
 
 .progress {
@@ -186,6 +188,7 @@ INDEX
     margin: 0 auto;
     width: 100%;
     background-image: url("../images/contact-bgr.png");
+    background-size: cover;
 }
 
 .contact h2 {
@@ -236,7 +239,7 @@ INDEX
 
     .feature {
         margin: 20px auto;
-        width: 55%;
+        width: 65%;
     }
 }
 
@@ -271,6 +274,14 @@ INDEX
     .hero-txt {
         width: 100%;
         height: 25%;
+        min-height: 165px;
+        padding: 3em 0px;
+        border-top: 2px solid;
+    }
+
+    .feature {
+        margin: 20px auto;
+        width: 85%;
     }
 
     .contact-row {
@@ -289,9 +300,23 @@ INDEX
 Projects
 */
 
+.project-headers {
+    font-family: "Courier", monospace;
+    height: 4em;
+    text-transform: uppercase;
+    margin: 0 0 2em 0;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/contact-bgr.png");
+    background-size: cover;
+}
+
 .project-noroff {
     background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    border: 3px solid #ddd;
     border-radius: 4px;
     width: 100%;
     max-width: 300px;
@@ -395,17 +420,16 @@ Projects
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
 }
+/*
+personal-projects
+*/
 
-.personal-project-row {
-    text-align: center;
-    display: flex;
-    align-items: stretch;
-    justify-content: space-evenly;
+.personal-header {
+    margin: 2em 0em;
 }
-
 .project-personal {
     background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    border: 3px solid #ddd;
     border-radius: 4px;
     width: 100%;
     max-width: 300px;
@@ -413,6 +437,13 @@ Projects
     padding: 1em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
     transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.personal-project-row {
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
 }
 
 .musicapp {
@@ -427,6 +458,11 @@ Projects
     border: 2px solid;
 }
 
+.project-personal:hover {
+    box-shadow: 3px 8px 10px rgb(0 0 0 / 50%);
+    transform: rotate(2deg);
+}
+
 .personal-logo-wrapper {
     text-align: center;
     margin: 0.5em auto;
@@ -437,6 +473,28 @@ Projects
     width: 100%;
 }
 
+.rickandapi-logo {
+    border: 2px solid #4371;
+}
+.view-site {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.416);
+    color: black;
+    border: 2px groove white;
+    border-radius: 3px;
+    text-transform: uppercase;
+    width: 8em;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.view-site:hover {
+    cursor: pointer;
+    color: white;
+    transform: scale(1.04);
+    
+}
+
 .project-screenshot-personal {
     width: 100%;
     height: auto;
@@ -445,7 +503,8 @@ Projects
 }
 
 @media (max-width: 775px) {
-    .noroff-project-row {
+    .noroff-project-row,
+    .personal-project-row {
         align-items: center;
         justify-content: space-evenly;
         flex-direction: column;
@@ -453,13 +512,15 @@ Projects
 }
 
 @media (min-width: 600px) {
-    .project-noroff {
+    .project-noroff,
+    .project-personal {
         width: calc(50% - 2em);
     }
 }
 
 @media (min-width: 900px) {
-    .project-noroff {
+    .project-noroff,
+    .project-personal {
         width: calc(33% - 2em);
     }
 }

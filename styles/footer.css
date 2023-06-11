@@ -4,4 +4,15 @@ footer {
     border-top: 2px solid white;
     color: var(--light-bgr);
     text-align: center;
+    font-family: "Courier", monospace;
+}
+
+footer p {
+    text-align: left;
+}
+
+@media (max-width: 750px) {
+    footer p {
+        text-align: center;
+    }
 }
