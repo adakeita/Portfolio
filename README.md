@@ -61,7 +61,7 @@ Installation:
 
 Clone repo from GitHub:
 
-{{git clone git@github.com:NoroffFEU/portfolio-1-example.git}}
+{{git clone https://github.com/adakeita/Portfolio.git}}
 
 
 Include google_font in head of HTML.
