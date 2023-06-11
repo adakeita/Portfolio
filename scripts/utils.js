@@ -26,17 +26,41 @@ export const handleMenu = () => {
     });
 };
 
+export const handleModal = () => {
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modalImage");
 
-export function createModal() {
-	const modal = document.createElement("div");
-	modal.classList.add("modal", "hidden");
+    const imgs = document.querySelectorAll(".project-screenshot-noroff, .project-screenshot-personal");
+    const captionText = document.getElementById("caption");
 
-	const modalImage = document.createElement("img");
-	modalImage.setAttribute("id", "modal-image");
-	modalImage.setAttribute("alt", "Blog post image enlarged");
+    imgs.forEach(img => {
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            document.body.style.overflow = "hidden";
+        }
+    });
 
-	modal.appendChild(modalImage);
-	document.body.appendChild(modal);
+    const span = document.getElementsByClassName("close")[0];
 
-	return modal;
+    span.onclick = function () {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+    }
+
+    window.onkeydown = function (event) {
+        if (event.key === "Escape") {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+    }
 }
+

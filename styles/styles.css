@@ -317,13 +317,12 @@ Projects
 .project-noroff {
     background-color: #f9f9f9;
     border: 3px solid #ddd;
-    border-radius: 4px;
+    border-radius: 2px;
     width: 100%;
     max-width: 300px;
     margin: 1em;
     padding: 1em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .noroff-project-row {
@@ -375,7 +374,7 @@ Projects
 }
 
 .project-screenshot-noroff:hover {
-    filter: blur(1px);
+    filter: grayscale();
     cursor: pointer;
 }
 
@@ -405,7 +404,7 @@ Projects
     width: 100%;
 }
 
-.project-link-noroff {
+.project-link-noroff, .project-link-personal {
     display: block;
     font-weight: bold;
     color: white;
@@ -416,7 +415,7 @@ Projects
     transition: all 0.3s ease-in-out;
 }
 
-.project-link-noroff:hover {
+.project-link-noroff:hover, .project-link-personal:hover {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
 }
@@ -430,7 +429,7 @@ personal-projects
 .project-personal {
     background-color: #f9f9f9;
     border: 3px solid #ddd;
-    border-radius: 4px;
+    border-radius: 2px;
     width: 100%;
     max-width: 300px;
     margin: 1em;

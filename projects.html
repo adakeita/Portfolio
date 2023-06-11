@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@500&display=swap" rel="stylesheet">
@@ -148,7 +152,8 @@
                     <p class="personal-project-description">
                         Are you curious about what the weather is like in Harare?
                         Do you need somwhere to waste time on the internet?
-                        Then you should try KeitaWeather, find out the temprature humidity and weather-conditions in most major cities.
+                        Then you should try KeitaWeather, find out the temprature humidity and weather-conditions in
+                        most major cities.
                     </p>
                     <a href="https://keitaweather.netlify.app/" class="view-live-site">
                         <button class="view-site">
@@ -167,6 +172,11 @@
                 </div>
             </div>
         </section>
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <div id="caption"></div>
+            <img class="modal-content" id="modalImage">
+        </div>
     </main>
     <footer id="footer">
         <p>Copyright &copy; 2023 Ada Mathilde Keita</p>
